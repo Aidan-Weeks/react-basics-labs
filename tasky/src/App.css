@@ -10,7 +10,7 @@ body {
 }
 
 
-h1 {
+/*h1 {
   text-align: center;
   background-color: grey;
   color: white;
@@ -27,14 +27,14 @@ div {
 .container{
   text-align: center;
   
-}
+}*/
 
 .description{
   size: 1rem;
   font-style: italic;
   font-weight: bold;
 }
-
+/*
 .card {
   display: inline-block;
   vertical-align: top;
@@ -89,7 +89,7 @@ button {
   bottom: 5px;
   right: 5px;
   color: red;
-}
+}*/
 
 input[type=text], input[type=date], select {
   width: 100%;
