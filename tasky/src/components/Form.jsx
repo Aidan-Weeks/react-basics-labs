@@ -46,6 +46,17 @@ const AddTaskForm = (props) => {
   />
 </div>
 <div>
+  <select
+    name="description"
+    id="outlined-multiline-static"
+    label="Priority"
+    slotProps={{ inputLabel: { shrink: true } }}
+    multiline
+    rows={4}
+    onChange={(event) => props.change(event)}
+  />
+</div>
+<div>
   <Button
     type="submit"
     variant="contained"

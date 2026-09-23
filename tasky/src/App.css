@@ -89,7 +89,7 @@ button {
   bottom: 5px;
   right: 5px;
   color: red;
-}*/
+}
 
 input[type=text], input[type=date], select {
   width: 100%;
@@ -120,6 +120,6 @@ form {
   text-align: left;
   width: 50%;
   margin: auto;
-}
+}*/ 
 
 

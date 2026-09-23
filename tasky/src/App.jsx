@@ -110,11 +110,12 @@ function App() {
         title={task.title}
         description={task.description}
         deadline={task.deadline}
+        priority={task.priority}
         done={task.done}
         key={task.id}
         markDone={() => doneHandler(index)}
         deleteTask={() => deleteHandler(index)}
-      />
+      />  
     ))}
   </Grid>
 </Container>
@@ -128,7 +129,9 @@ function App() {
     py: 6,
   }}
 >
-  <Grid container justifyContent="center">
+  <Grid container sx={{
+    justifyContent:"center"
+  }}>
     <AddTaskForm
       submit={formSubmitHandler}
       change={formChangeHandler}
