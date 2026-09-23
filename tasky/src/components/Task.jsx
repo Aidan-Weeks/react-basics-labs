@@ -1,7 +1,12 @@
 const Task = (props) => {
     
     return (
-        <div className="card" style={{backgroundColor: props.done ? 'lightgrey' : '#5bb4c4'}}>
+        <div className="card" style={{backgroundColor: props.done ? 'lightgrey' : props.priority === 'high'
+                    ? '#ff9999'
+                    : props.priority === 'medium'
+                    ? '#ffcc66'
+                    : '#99cc99'}}
+                    >
            <p>{props.title}</p>
             <p>Due: {props.deadline}</p>
             <p className="description">{props.description}</p>
@@ -11,7 +16,6 @@ const Task = (props) => {
 
         </div>
     )
-    
 }
 
 export default Task;
